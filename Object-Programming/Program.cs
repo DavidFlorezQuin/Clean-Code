@@ -1,13 +1,17 @@
 ﻿
 
 using BusinessComponents;
+using Microsoft.Extensions.DependencyInjection;
 using RepositoryComponent;
 
-var beerManager = new BeerManager(new BeerRepository());
+var container = new ServiceCollection()
+    .AddSingleton<IRepository, BeerRepository>()
+    .AddTransient<BeerManager>()
+    .BuildServiceProvider(); 
 
-beerManager.Add("Costeña");
-beerManager.Add("Corona");
-Console.WriteLine(beerManager.Get());
+
+var beerManager = container.GetService<BeerManager>();
+
 public class DefaultRepository : IRepository
 {
     public void Add(string name)

@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/Clean Architecture/">
+    <Project Path="Application/Application.csproj" Id="320ecedd-0f73-4aab-b057-ca519cc73ec0" />
+    <Project Path="Entities/Entities.csproj" Id="c790b0fe-35c5-41a4-9d42-ae512941c6da" />
+  </Folder>
   <Project Path="BusinessComponents/BusinessComponents.csproj" Id="62566977-9325-474f-a321-e8ce2ca8af92" />
   <Project Path="Object-Programming/Object-Programming.csproj" Id="423cec4a-4056-4e72-af08-f74669fd3c41" />
   <Project Path="RepositoryComponent/RepositoryComponent.csproj" Id="b2a0e0d9-455e-4d1e-a339-4cefb6adf820" />

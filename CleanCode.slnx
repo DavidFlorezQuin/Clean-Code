@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/Clean Architecture/">
     <Project Path="Application/Application.csproj" Id="320ecedd-0f73-4aab-b057-ca519cc73ec0" />
+    <Project Path="Data/Data.csproj" Id="4a830de2-9a44-4c43-8439-d72cfa3c2df9" />
     <Project Path="Entities/Entities.csproj" Id="c790b0fe-35c5-41a4-9d42-ae512941c6da" />
   </Folder>
   <Project Path="BusinessComponents/BusinessComponents.csproj" Id="62566977-9325-474f-a321-e8ce2ca8af92" />

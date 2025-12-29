@@ -10,5 +10,11 @@ namespace Data
             : base(options) { }
 
         public DbSet<Beer> Beers { get; set; }
+
+        
+        public  override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Beer>().ToTable("Beer"); 
+        }
     }
 }
